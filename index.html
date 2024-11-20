@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Hein</title>
-    <!-- Google Font - Montserrat is a bold, modern font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
     <style>
         * {
@@ -37,9 +36,11 @@
         }
 
         .profile-image {
-            width: 2239px;
-            height: 2985px;
-            object-fit: contain;
+            width: 400px;  /* Reduced from 2239px */
+            height: 533px; /* Maintained aspect ratio: 400 * (2985/2239) ≈ 533 */
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
 
         .content {
@@ -111,9 +112,8 @@
             }
 
             .profile-image {
-                width: 100%;
-                height: auto;
-                max-width: 600px;
+                width: 300px;  /* Smaller for mobile */
+                height: 400px;
                 margin: 0 auto;
             }
 
