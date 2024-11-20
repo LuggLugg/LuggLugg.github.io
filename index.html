@@ -1,7 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: #f5f5f5;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 300px 1fr;
+            gap: 2rem;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .profile-image {
+            width: 100%;
+            aspect-ratio: 1;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .intro-text {
+            font-size: 1.1rem;
+            color: #444;
+            margin-top: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .profile-image {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+    <div class="container">
+        <div class="profile-section">
+            <img src="lukas-hein_cropped.jpg" alt="Lukas Hein Profile Picture" class="profile-image">
+        </div>
+        <div class="content">
+            <p class="intro-text">
+                Hey there! I'm a motivated student in the Liberal Arts and Sciences Program of the University of Freiburg, specializing in Governance. I'm particularly interested in how Artificial Intelligence impacts security and in exploring the future of the European Union, particularly in areas like policy integration, digital sovereignty, and economic resilience.
+            </p>
+        </div>
+    </div>
 </body>
 </html>
