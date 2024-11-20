@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Previous head content remains the same -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lukas Hein</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        /* All previous styles remain the same */
+        /* Previous styles remain the same */
         * {
             margin: 0;
             padding: 0;
@@ -64,6 +65,19 @@
             font-weight: 700;
         }
 
+        /* New styles for the subtle link */
+        .subtle-link {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .subtle-link:hover {
+            opacity: 0.7;
+        }
+
+        /* Rest of the previous styles */
         .contact-section {
             margin-top: 2rem;
         }
@@ -160,7 +174,7 @@
         </div>
         <div class="content">
             <p class="intro-text">
-                I'm <span class="name">Lukas Hein</span>, a motivated student in the Liberal Arts and Sciences Program of the University of Freiburg, specializing in Governance. I'm particularly interested in how Artificial Intelligence impacts security and in exploring the future of the European Union, particularly in areas like policy integration, digital sovereignty, and economic resilience.
+                I'm <span class="name">Lukas Hein</span>, a motivated student in the <a href="https://www.ucf.uni-freiburg.de/liberal-arts-and-sciences" class="subtle-link">Liberal Arts and Sciences</a> Program of the University of Freiburg, specializing in Governance. I'm particularly interested in how Artificial Intelligence impacts security and in exploring the future of the European Union, particularly in areas like policy integration, digital sovereignty, and economic resilience.
             </p>
             
             <div class="contact-section">
