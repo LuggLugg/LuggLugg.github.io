@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<!-- Head section remains the same until styles -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -38,21 +37,98 @@
             padding: 4rem;
             max-width: 1800px;
             margin: 0 auto;
-            padding-bottom: 120px; /* Increased bottom padding */
+            padding-bottom: 100px;
         }
 
-        /* ... other unchanged styles ... */
+        .profile-section {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .profile-image {
+            width: 400px;
+            height: 533px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .intro-text {
+            font-size: 1.3rem;
+            color: #333;
+            max-width: 800px;
+            font-weight: 400;
+        }
+
+        .name {
+            font-weight: 700;
+        }
+
+        .subtle-link {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+            transition: opacity 0.3s ease;
+        }
+
+        .subtle-link:hover {
+            opacity: 0.7;
+        }
+
+        .contact-section {
+            margin-top: 2rem;
+        }
+
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 400px;
+        }
+
+        input, textarea {
+            padding: 0.8rem;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            width: 100%;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background-color: #0077B5;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #005885;
+        }
 
         .social-links {
             position: fixed;
             bottom: 2rem;
             right: 2rem;
             z-index: 100;
-            /* Added backdrop blur for better separation */
-            backdrop-filter: blur(8px);
-            -webkit-backdrop-filter: blur(8px);
-            padding: 0.5rem;
-            border-radius: 8px;
         }
 
         .linkedin-button {
@@ -61,14 +137,16 @@
             gap: 0.5rem;
             padding: 0.8rem 1.5rem;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            background-color: #0077B5;
+        }
+
+        .linkedin-button i {
+            font-size: 1.2rem;
         }
 
         @media (max-width: 1200px) {
             .container {
                 grid-template-columns: 1fr;
                 padding: 2rem;
-                padding-bottom: 140px; /* Even more padding on mobile */
             }
 
             .profile-image {
@@ -83,25 +161,16 @@
 
             .contact-form {
                 margin: 0 auto;
-                margin-bottom: 3rem; /* Added space after the form */
             }
 
             .social-links {
-                bottom: 1.5rem; /* Moved up slightly */
-                right: 50%; /* Center horizontally */
-                transform: translateX(50%); /* Center horizontally */
-                width: 90%; /* Make it wider on mobile */
-                max-width: 400px; /* But not too wide */
-            }
-
-            .linkedin-button {
-                width: 100%; /* Make button full width */
-                justify-content: center; /* Center the text and icon */
+                position: fixed;
+                bottom: 2rem;
+                right: 2rem;
             }
         }
     </style>
 </head>
-<!-- Body remains exactly the same -->
 <body>
     <div class="container">
         <div class="profile-section">
